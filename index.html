@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GAY-BIYUK-DETECTOR</title>
+<style>
+#hop{
+display:none;
+}
+#pop{
+display:none;
+}
+#you{
+display:none;	
+}
+</style>
+</head>
+<body>
+<div id="you"><img src="you.jpg" width="500px" height="500px">
+<h1>Сьебись</h1></div>
+<div id="hop"><img src="ppk.jpg" width="500px" height="500px">
+<h1>Пошли бухать брооо</h1></div>
+<div id="pop"><img src="ppm.jpg"  width="500px" height="500px">
+<h1>Пошёл нахуй пидр<h1></div>
+<script type="text/javascript">
+	let aler = confirm("Чепуха проверся на гея.(Все слова пиши с большой буквы)")
+    if(aler == true){
+    start()
+    }
+	function start(){
+    let you = document.getElementById('you')
+    let hop = document.getElementById('hop')
+    let pop = document.getElementById('pop')
+    let pro = prompt("Укажите свое имя(C большой буквы)")
+	switch(pro){
+		case 'Влад':
+		alert("ВЫ ГЕЙ 100%!!!!")
+        pop.style.display = "block"
+		case 'Данил':
+		alert("ВЫ ГЕЙ 100%!!!!")
+		pop.style.display = "block"
+		case 'Паша':
+		alert("ВЫ ГЕЙ 100%!!!!")
+		pop.style.display = "block"
+		case 'Артем':
+		alert("ВЫ ГЕЙ 100%!!!!")
+		pop.style.display = "block"
+		case 'Рома':
+		alert("ВЫ ГЕЙ 100%!!!!")
+	    pop.style.display = "block"
+	 break;
+	default:
+   question()
+	}
+	function question(){
+  let mass = [prompt("Пьешь пиво? Да | Нет"),prompt("Бьешь лолкики? Да | Нет"),prompt("Покупаешь травку ? Да | Нет"),prompt("Кида(л)ешь насвай? Да | Нет"),prompt("Монархи для быдла? Да | Нет")]
+let mother = mass.filter((ern)=>{
+	return ern == "Да"  
+})
+  let moth = mass.filter((rrn)=>{
+	return rrn == "Нет" 
+})
+ if(moth.length > 2){
+ 	alert('Гей')
+ }
+ else if(mother.length > 2){
+alert('Не гей')
+hop.style.display = "block"
+}
+else{
+	alert('Ты кто ваще нах?')
+you.style.display = "block"
+}
+
+ }}
+</script>
+</body>
+</html>
